@@ -1,0 +1,61 @@
+{
+	Youtube:  #c4302b;
+}
+
+.main-header {
+	height: 56px;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+.icono {
+	width: 24px;
+	height: 24px;
+}
+.icono-especial{
+	width: 28px;
+	height: 28px;	
+}
+svg path{
+	width: 24px;
+	height: 24px;
+}
+.left-side-division {
+	display: flex;
+}
+.left-side {
+	width: 168px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.left-side .logo-name {
+	display: flex;
+    height: 24px;
+    width: 90px;
+}
+.left-side img{
+	width: 24px;
+	height: 24px;
+}
+.title {
+	font-size: 18px;
+    width: 100%;
+    font-weight: 700;
+    align-items: center;
+    display: flex;
+    letter-spacing: -2px;
+    height: 24px;
+}
+.right-side {
+	display: flex;
+	align-items: center;
+}
+.right-side .icono-video, .right-side .icono-notification {
+	margin-right: 8px;
+}
+.right-side .icono-account {
+	padding: 1px 6px;
+}
