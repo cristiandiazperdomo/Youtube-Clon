@@ -13,21 +13,22 @@ export const Header = () => {
 		<header className="main-header">
 			<div className="left-side">
 				<div className="left-side-division">
-					<MdTableRows className="icono"/>
+					<MdTableRows className="icono icono-compartir"/>
 				</div>
 				<div className="logo-name">
 					<img src={require('../../img/youtube-logo.png')} alt="youtube_logo" />
-					<h1 className="title">Youtube</h1>
+					<h1 className="title">YouTube</h1>
+					<p className="country">UY</p>
 				</div>
 			</div>
 			<div className="center">
 				<input type="text" placeholder="Buscar"/>
-				<MdSearch className="icono"/>
-				<MdOutlineKeyboardVoice className="icono"/>
+				<MdSearch className="icono icono-search icono-compartir"/>
+				<MdOutlineKeyboardVoice className="icono icono-voice icono-compartir"/>
 			</div>				
 			<div className="right-side">
-				<MdOutlineVideoCall className="icono icono-video"/>
-				<MdNotificationsNone className="icono icono-notification"/>
+				<MdOutlineVideoCall className="icono icono-video icono-compartir"/>
+				<MdNotificationsNone className="icono icono-notification icono-compartir"/>
 				<MdAccountCircle className="icono icono-account"/>
 			</div>
 		</header>
