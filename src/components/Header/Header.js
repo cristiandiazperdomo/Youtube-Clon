@@ -22,14 +22,26 @@ export const Header = () => {
 				</div>
 			</div>
 			<div className="center">
-				<input type="text" placeholder="Buscar"/>
-				<MdSearch className="icono icono-search icono-compartir"/>
-				<MdOutlineKeyboardVoice className="icono icono-voice icono-compartir"/>
+				<div className="center-input">
+					<input type="text" placeholder="Buscar"/>
+				</div>
+				<div className="icono-container search">
+					<MdSearch className="icono icono-search icono-compartir"/>
+				</div>
+				<div className="icono-container icono-voice-container">
+					<MdOutlineKeyboardVoice className="icono icono-voice icono-compartir"/>
+				</div>
 			</div>				
 			<div className="right-side">
-				<MdOutlineVideoCall className="icono icono-video icono-compartir"/>
-				<MdNotificationsNone className="icono icono-notification icono-compartir"/>
-				<MdAccountCircle className="icono icono-account"/>
+				<div className="icono-container">
+					<MdOutlineVideoCall className="icono icono-video icono-compartir"/>
+				</div>
+				<div className="icono-container">
+					<MdNotificationsNone className="icono icono-notification icono-compartir"/>
+				</div>
+				<div className="icono-container">
+					<MdAccountCircle className="icono icono-account"/>
+				</div>
 			</div>
 		</header>
 	)
