@@ -16,6 +16,7 @@
     width: 60px;
     box-sizing: border-box;
     justify-content: center;
+    border-left: none;
 }
 .icono-container {
 	display: flex;
@@ -79,9 +80,10 @@ svg path{
     border: none;
     padding: 0 0 1px 1px;
     outline: none;
-    font-size: 16px;
+    font-size: 14px;
 }
 .center-input {
+	display: flex;
 	width: 500px;
     height: 40px;
 	border: 1px solid #ccc;
