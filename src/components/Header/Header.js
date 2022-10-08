@@ -1,11 +1,12 @@
 import React from 'react';
 import './Header.css';
-import { MdTableRows, 
-	MdOutlineKeyboardVoice, 
-	MdAccountCircle,
-	MdNotificationsNone,
-	MdOutlineVideoCall,
-	} from "react-icons/md";
+import { MdTableRows,
+		MdSearch, 
+		MdOutlineKeyboardVoice, 
+		MdAccountCircle,
+		MdNotificationsNone,
+		MdOutlineVideoCall,
+		} from "react-icons/md";
 
 export const Header = () => {
 	return (
@@ -20,7 +21,8 @@ export const Header = () => {
 				</div>
 			</div>
 			<div className="center">
-				<input type="text" />
+				<input type="text" placeholder="Buscar"/>
+				<MdSearch className="icono"/>
 				<MdOutlineKeyboardVoice className="icono"/>
 			</div>				
 			<div className="right-side">
