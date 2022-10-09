@@ -1,6 +1,6 @@
 .main-header {
-	height: 56px;
-	display: flex;
+	height: 55px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 16px;
@@ -19,12 +19,22 @@
     border-left: none;
 }
 .icono-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    box-sizing: border-box;
+    margin-right: 8px;
+}
+.icono-container-search {
 	display: flex;
 	justify-content: center;
 	align-items: center;
     cursor: pointer;
     height: 40px;
-    width: 60px;
+    width: 63px;
     box-sizing: border-box;
 }
 .icono {
@@ -38,10 +48,10 @@ svg path{
 }
 .left-side-division {
 	display: flex;
+    padding-right: 12px;
 }
 .left-side {
 	width: 168px;
-    height: 55px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -50,41 +60,45 @@ svg path{
 	display: flex;
     height: 24px;
     width: 90px;
-    align-items: flex-end;
+    align-items: center;
 }
 .logo-name .country {
 	font-size: 10px;
-	padding-left: 4px;
+    padding-left: 4px;
+    padding-bottom: 12px;
 }
 .left-side img{
-	margin-right: 1px;
-	width: 24px;
-	height: 24px;
+    margin-right: 1px;
+    width: 28px;
+    height: 28px;
 }
 .title {
-	font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
     width: 100%;
-    font-weight: 700;
+    font-weight: 600;
     align-items: center;
     display: flex;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
     height: 24px;
 }
 .center {
 	display: flex;
     align-items: center;
     height: 40px;
+    width: 728px;
+    justify-content: flex-end;
 }
 .center input {
 	display: flex;
     border: none;
     padding: 0 0 1px 1px;
     outline: none;
-    font-size: 14px;
+    font-size: 16px;
 }
 .center-input {
 	display: flex;
-	width: 500px;
+	width: 525px;
     height: 40px;
 	border: 1px solid #ccc;
     padding: 2px 6px;
@@ -107,15 +121,18 @@ svg path{
     box-sizing: border-box;
     border-radius: 50%;
     background-color: #F5F5F5;
-    margin-left: 4px;
+    margin-left: 8px;
 }
 .right-side {
-	display: flex;
-	align-items: center;
+    min-width: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
-.right-side .icono-video, .right-side .icono-notification {
-	width: 24px
+.right-side .icono-video, .right-side .icono-notification, .right-side .icono-account {
+    width: 28px;
 }
-.right-side .icono-account {
-	padding: 1px 6px;
+.right-side svg {
+    width: 60px;
+	padding: 0 6px;
 }

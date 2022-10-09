@@ -2,18 +2,18 @@ import React from 'react';
 import './Header.css';
 import { MdTableRows,
 		MdSearch, 
-		MdOutlineKeyboardVoice, 
+		MdKeyboardVoice, 
 		MdAccountCircle,
 		MdNotificationsNone,
 		MdOutlineVideoCall,
 		} from "react-icons/md";
-
+import { BsList } from "react-icons/bs";
 export const Header = () => {
 	return (
 		<header className="main-header">
 			<div className="left-side">
 				<div className="left-side-division">
-					<MdTableRows className="icono icono-compartir"/>
+					<BsList className="icono icono-compartir"/>
 				</div>
 				<div className="logo-name">
 					<img src={require('../../img/youtube-logo.png')} alt="youtube_logo" />
@@ -25,11 +25,11 @@ export const Header = () => {
 				<div className="center-input">
 					<input type="text" placeholder="Buscar"/>
 				</div>
-				<div className="icono-container search">
+				<div className="icono-container-search search">
 					<MdSearch className="icono icono-search icono-compartir"/>
 				</div>
 				<div className="icono-container icono-voice-container">
-					<MdOutlineKeyboardVoice className="icono icono-voice icono-compartir"/>
+					<MdKeyboardVoice className="icono icono-voice icono-compartir"/>
 				</div>
 			</div>				
 			<div className="right-side">
