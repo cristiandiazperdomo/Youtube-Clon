@@ -9,22 +9,33 @@ export const Card = () => {
 		<div className="card-container">
 			<div className="card">
 				<header>
-					<img src={require("../../img/dall-e.png")} className="miniature" alt="presentation" />
+					<div className="miniature-container">
+						<img src={require("../../img/dall-e.png")} className="miniature" alt="presentation" />
+					</div>
+					<div className="duration">
+						<div>
+							<h3>10:50</h3>
+						</div>
+					</div>
 				</header>
 				<footer>
 					<div className="card-left-side">
 						<div>
-							<a href="#">
-								Cabaratendo en Uruguay
-							</a>
+							<div className="perfil-container">
+								<img src={require('../../img/perfil.png')} className="perfil" alt="perfil" />
+							</div>
 						</div>
-						<div className="perfil-container">
-														
-						</div>
-						<div>
-							<a href="#">Franco Escamilla</a>
-							<a href="#">2707 visualizaciones .</a>
-							<a href="#">hace 13 dias</a>
+						<div className="card-video-info">
+							<div>
+								<h3 href="#">
+									LAST WEEK
+								</h3>
+							</div>
+							<div>
+								<a href="#">Franco Escamilla</a>
+								<a href="#">2707 visualizaciones<span className="scope"></span></a>
+								<a href="#">hace 13 dias</a>
+							</div>
 						</div>
 					</div>
 					<div className="card-right-side">

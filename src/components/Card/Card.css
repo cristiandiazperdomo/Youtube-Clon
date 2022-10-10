@@ -1,20 +1,85 @@
 .card-container {
-	border: 1px solid #ccc;
-	width: 272px;
-	height: 294px;
+    width: 300px;
+    height: 294px;
+	margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 40px;
     box-sizing: border-box;
 }
 .card {
     box-sizing: border-box;
-	margin-left: 8px;
-    margin-right: 8px;
-    margin-bottom: 40px;
 }
 .card-container a {
 	text-decoration: none;
 	color: black;
 }
+.card-left-side {
+	display: flex;
+}
+.card-video-info {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-video-info div:nth-child(1) {
+	margin: 12px 0 4px 0;
+	margin-bottom: 12px;
+}
+.card-video-info div:nth-child(1) h3 {
+	margin: 0;
+	font-size: .9em;
+	color: #030303;
+	font-weight: bold;
+}
+.card-video-info div:nth-child(2) a:nth-child(1) {
+	display: block;
+}
+.card-video-info div:nth-child(2) a {
+	color: #606060;
+	font-size: 12px;
+}
+.miniature-container {
+	position: relative;
+}
 .miniature {
-	width: 253px;
-	height: 142px;
+	width: 100%;
+	width: 300px;
+	height: 168px;
+}
+.duration { 
+	position: absolute;
+	width: 300px;
+    top: 8%;
+    height: 170px;
+}
+.duration div {
+	top: 88%;
+    position: absolute;
+    left: 86%;
+}
+.duration h3 {
+	font-size: 14px;
+	margin: 1px;
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: right;
+}
+.scope {
+	display: inline-block;
+}
+.scope::after {
+	content: "•";
+    margin: 0 4px;
+    color: #606060;
+
+}
+.perfil-container {
+
+}
+.perfil-container .perfil {
+	margin-top: 12px;
+    margin-right: 12px;
+	border-radius: 50%;
+	width: 36px;
 }
