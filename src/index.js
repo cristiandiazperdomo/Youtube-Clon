@@ -7,6 +7,7 @@ import { Header } from './components/Header/Header';
 ReactDOM.render(
   <React.StrictMode>
     <Header />
+    <Card /> 
   </React.StrictMode>,
   document.getElementById('root')
 );

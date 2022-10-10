@@ -1,23 +1,37 @@
 import React from 'react';
+import './Card.css';
 import { GetImageBank } from '../../callApi/getImageBank';
-//console.log(asd)
 
 export const Card = () => {
 	const {callApi, asd} = GetImageBank();
 	callApi()
 	return (
-		<div>
-			<header>
-				<img src="" alt="presentation" />
-			</header>
-			<footer>
-				<div className="left-side">
-					h
-				</div>
-				<div className="right-side">
+		<div className="card-container">
+			<div className="card">
+				<header>
+					<img src={require("../../img/dall-e.png")} className="miniature" alt="presentation" />
+				</header>
+				<footer>
+					<div className="card-left-side">
+						<div>
+							<a href="#">
+								Cabaratendo en Uruguay
+							</a>
+						</div>
+						<div className="perfil-container">
+														
+						</div>
+						<div>
+							<a href="#">Franco Escamilla</a>
+							<a href="#">2707 visualizaciones .</a>
+							<a href="#">hace 13 dias</a>
+						</div>
+					</div>
+					<div className="card-right-side">
 
-				</div>
-			</footer>
+					</div>
+				</footer>
+			</div>
 		</div>	
 	)
 }
