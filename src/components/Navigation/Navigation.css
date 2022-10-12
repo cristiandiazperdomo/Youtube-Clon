@@ -1,0 +1,21 @@
+.Navigation-container {
+	width: 224px;
+}
+.Navigation-options {
+	width: 100%;
+}
+.Navigation-options ul {
+	padding: 0;
+	list-style: none;
+}
+.Navigation-options ul li {
+	padding: 0 24px;
+}
+.Navigation-options ul li a {
+	text-decoration: none;
+	color: black;
+}
+.Navigation-options .susciption-panel li img {
+	width: 24px;
+	height: 24px;
+}
