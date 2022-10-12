@@ -25,7 +25,7 @@ export const Navigation = () => {
 	return (
 		<div className="Navigation-container">
 			<div className="Navigation-options">
-				<ul>
+				<ul className="Navigation-main">
 					<li>
 						<i><GiHouse/></i>
 						<a href="#">
@@ -90,47 +90,57 @@ export const Navigation = () => {
 						</a>	
 					</li>
 				</ul>
-				<h3>SUSCRIPCIONES</h3>
 				<ul className="susciption-panel">
+					<h3>SUSCRIPCIONES</h3>
 					<li>
-						<img src={require('../../img/nasa.jpg')} alt="nasa" />						
+						<picture>
+							<img src={require('../../img/nasa.jpg')} alt="nasa" />						
+						</picture>
 						<a href="#">
 							NASA
 						</a>	
 					</li>
 					<li>
-						<img src={require('../../img/platzi.jpg')} alt="platzi" />
+						<picture>
+							<img src={require('../../img/platzi.jpg')} alt="platzi" />
+						</picture>
 						<a href="#">
 							Platzi
 						</a>	
 					</li>
 					<li>
-						<img src={require('../../img/ysy.jpg')} alt="ysy" />
+						<picture>
+							<img src={require('../../img/ysy.jpg')} alt="ysy" />
+						</picture>
 						<a href="#">
 							YSY A
 						</a>	
 					</li>
 					<li>
-						<img src={require('../../img/the wild project.jpg')} alt="platzi" />
+						<picture>
+							<img src={require('../../img/the wild project.jpg')} alt="platzi" />
+						</picture>
 						<a href="#">
 							The Wild Project
 						</a>	
 					</li>
 					<li>
-						<img src={require('../../img/jaime altozano.jpg')} alt="jaime altozano" />
+						<picture>
+							<img src={require('../../img/jaime altozano.jpg')} alt="jaime altozano" />
+						</picture>
 						<a href="#">
 							Jaime Altozano
 						</a>
+					</li>
 					<li>
 						<i><MdOutlineExpandMore/></i>
 						<a href="#">
 							Mostrar 199 más
 						</a>	
 					</li>	
-					</li>
 				</ul>
-				<h3>EXPLORAR</h3>
 				<ul className="explore-panel">
+				<h3>EXPLORAR</h3>
 					<li>
 						<i><MdOutlineVideogameAsset/></i>
 						<a href="#">
@@ -150,40 +160,40 @@ export const Navigation = () => {
 						</a>	
 					</li>
 				</ul>
+				<ul className="youtube-panel">
 				<h3>MÁS DE YOUTUBE</h3>
-				<ul className="susciption-panel">
 					<li>
 						<img src={require('../../img/youtube-logo.png')} alt="youtube logo" />						
 						<a href="#">
-							NASA
+							Youtube Premium
 						</a>	
 					</li>
 					<li>
-						<img src={require('../../img/YouTube-Studio.svg')} alt="YouTube Studio" />
+						<img src="https://cdn.pixabay.com/photo/2021/05/22/10/22/youtube-6273167_1280.png" alt="YouTube Studio" />
 						<a href="#">
-							Platzi
+							Creator Studio
+						</a>
+					</li>
+					<li className="youtube-music">
+						<img src="https://mspoweruser.com/wp-content/uploads/2022/05/Youtube-Music-Logo.png" alt="ysy" />
+						<a href="#">
+							Youtube Music
 						</a>	
 					</li>
 					<li>
-						<img src={require('../../img/YouTube-Studio.svg')} alt="ysy" />
+						<img src={require("../../img/youtube-kids.png")} alt="platzi" />
 						<a href="#">
-							YSY A
+							Youtube Kids
 						</a>	
 					</li>
 					<li>
-						<img src={require('../../img/Youtube-Studio.svg')} alt="platzi" />
+						<img src={require("../../img/youtube-tv.png")} alt="platzi" />
 						<a href="#">
-							The Wild Project
-						</a>	
-					</li>
-					<li>
-						<img src={require('../../img/YouTube-Studio.svg')} alt="jaime altozano" />
-						<a href="#">
-							Jaime Altozano
+							Youtube TV
 						</a>	
 					</li>
 				</ul>
-				<ul className="susciption-panel">
+				<ul className="tools">
 					<li>
 						<i><MdOutlineSettings/></i>
 						<a href="#">
@@ -209,7 +219,7 @@ export const Navigation = () => {
 						</a>	
 					</li>
 				</ul>
-				<ul>
+				<ul className="informacion">
 					<li>Información</li>
 					<li>Prensa</li>
 					<li>Derechos de autor</li>
@@ -217,13 +227,16 @@ export const Navigation = () => {
 					<li>Publicidad</li>
 					<li>Desarrolladores</li>
 				</ul>
-				<ul>
+				<ul  className="condiciones">
 					<li>Términos</li>
 					<li>Privacidad</li>
 					<li>Politica y seguridad</li>
 					<li>Cómo funciona YouTube</li>
 					<li>Probar funciones nuevas</li>
 				</ul>
+				<h4>
+					Fines Educativos 2022
+				</h4>
 			</div>		
 		</div>
 	)

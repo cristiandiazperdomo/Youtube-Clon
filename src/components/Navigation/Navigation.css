@@ -1,21 +1,94 @@
 .Navigation-container {
-	width: 224px;
+	width: 240px;
 }
 .Navigation-options {
 	width: 100%;
 }
 .Navigation-options ul {
 	padding: 0;
+	margin: 0;
 	list-style: none;
 }
+.Navigation-options ul {
+	border-top: 1px solid rgba(0, 0, 0, .1);
+    margin-top: 12px;
+    padding-top: 12px;
+}
+.Navigation-options ul:nth-child(1) {
+	border-top: none;
+}
+.Navigation-options h3 {
+	font-weight: 600;
+	margin: 0;
+	color: #606060;
+    display: block;
+    padding: 8px 24px;
+    font-size: 14px;
+}
+
 .Navigation-options ul li {
-	padding: 0 24px;
+	display: flex;
+    justify-content: flex-start;
+    padding: 0 24px;
+    height: 40px;
+    align-items: center;
 }
-.Navigation-options ul li a {
-	text-decoration: none;
-	color: black;
-}
-.Navigation-options .susciption-panel li img {
+.Navigation-options ul li i svg {
 	width: 24px;
 	height: 24px;
+	padding: 0 24px 0 0;
+}
+.Navigation-options ul li img {
+	width: 24px;
+	height: 24px;
+	padding: 0 24px 0 0;
+}
+.Navigation-options ul li a {
+	font-weight: 400;
+    height: 20px;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+.susciption-panel li picture {
+	padding: 0 24px 0 0;
+}
+.susciption-panel li img {
+	padding: 0 !important;
+	border-radius: 50%;
+}
+.youtube-panel .youtube-music img {
+	object-fit: cover;
+}
+.Navigation-options .condiciones {
+	border-top: none;
+	padding: 0;
+	margin: 0;
+}
+.Navigation-options .informacion, 
+.Navigation-options .condiciones {
+	padding: 16px 24px 0;
+    display: flex;
+    font-size: 13px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.Navigation-options .informacion li, 
+.Navigation-options .condiciones li{
+	color: #606060;
+	font-weight: 600;
+	height: 18px;
+    padding: 0;
+    margin: 0;
+    line-height: 1.8rem;
+    margin-right: 8px;
+}
+h4 {
+	font-weight: 500;
+	margin: 0;
+	color: #909090;
+    display: block;
+    padding: 8px 24px;
+    font-size: 13px;
 }
