@@ -8,7 +8,11 @@ import { MdOutlineVideoLibrary,
 		 MdOutlineEmojiFlags,
 		 MdHelpOutline,
 		 MdLightbulbOutline,
-		 MdOutlineVideogameAsset} from "react-icons/md";
+		 MdOutlineVideogameAsset,
+		 MdOutlineSettings,
+		 MdOutlineEmojiEvents,
+		 MdOutlineExpandMore,
+		 MdOutlineFeedback } from "react-icons/md";
 import { AiOutlineLike } from "react-icons/ai";
 import { BiHistory } from "react-icons/bi";
 //import { CiClock2, CiYoutube } from "react-icons/ci";
@@ -80,7 +84,7 @@ export const Navigation = () => {
 						</a>	
 					</li>
 					<li>
-						<i><AiOutlineLike/></i>
+						<i><MdOutlineExpandMore/></i>
 						<a href="#">
 							Mostrar más
 						</a>	
@@ -116,7 +120,13 @@ export const Navigation = () => {
 						<img src={require('../../img/jaime altozano.jpg')} alt="jaime altozano" />
 						<a href="#">
 							Jaime Altozano
+						</a>
+					<li>
+						<i><MdOutlineExpandMore/></i>
+						<a href="#">
+							Mostrar 199 más
 						</a>	
+					</li>	
 					</li>
 				</ul>
 				<h3>EXPLORAR</h3>
@@ -134,7 +144,7 @@ export const Navigation = () => {
 						</a>	
 					</li>
 					<li>
-						<i><FaRegCaretSquareRight/></i>
+						<i><MdOutlineEmojiEvents/></i>
 						<a href="#">
 							Deportes
 						</a>	
@@ -143,31 +153,31 @@ export const Navigation = () => {
 				<h3>MÁS DE YOUTUBE</h3>
 				<ul className="susciption-panel">
 					<li>
-						<img src={require('../../img/nasa.jpg')} alt="nasa" />						
+						<img src={require('../../img/youtube-logo.png')} alt="youtube logo" />						
 						<a href="#">
 							NASA
 						</a>	
 					</li>
 					<li>
-						<img src={require('../../img/platzi.jpg')} alt="platzi" />
+						<img src={require('../../img/YouTube-Studio.svg')} alt="YouTube Studio" />
 						<a href="#">
 							Platzi
 						</a>	
 					</li>
 					<li>
-						<img src={require('../../img/ysy.jpg')} alt="ysy" />
+						<img src={require('../../img/YouTube-Studio.svg')} alt="ysy" />
 						<a href="#">
 							YSY A
 						</a>	
 					</li>
 					<li>
-						<img src={require('../../img/the wild project.jpg')} alt="platzi" />
+						<img src={require('../../img/Youtube-Studio.svg')} alt="platzi" />
 						<a href="#">
 							The Wild Project
 						</a>	
 					</li>
 					<li>
-						<img src={require('../../img/jaime altozano.jpg')} alt="jaime altozano" />
+						<img src={require('../../img/YouTube-Studio.svg')} alt="jaime altozano" />
 						<a href="#">
 							Jaime Altozano
 						</a>	
@@ -175,7 +185,7 @@ export const Navigation = () => {
 				</ul>
 				<ul className="susciption-panel">
 					<li>
-						<i><MdOutlineEmojiFlags/></i>
+						<i><MdOutlineSettings/></i>
 						<a href="#">
 							Configuración
 						</a>	
@@ -193,7 +203,7 @@ export const Navigation = () => {
 						</a>	
 					</li>
 					<li>				
-						<i><MdOutlineEmojiFlags/></i>
+						<i><MdOutlineFeedback/></i>
 						<a href="#">
 							Enviar sugerencia
 						</a>	
