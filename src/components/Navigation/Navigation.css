@@ -14,7 +14,6 @@
     position: absolute;
     background-color: white;
     top: 0px;
-    /* left: -240px; */
     width: 240px;
 }
 .Navigation-main {
@@ -28,6 +27,7 @@ button {
 	background-color: transparent;
 	border: none;
 	padding: 0;
+	cursor: pointer;
 }
 .navigation-left-side {
     box-sizing: border-box;
