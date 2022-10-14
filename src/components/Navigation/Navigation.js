@@ -1,4 +1,5 @@
-import React from 'react';
+import { React,
+		 useRef } from 'react';
 import './Navigation.css';
 import { MdOutlineVideoLibrary,
 		 MdOutlineSubscriptions, 
@@ -23,13 +24,27 @@ import { GiHouse } from "react-icons/gi";
 import { BsList } from "react-icons/bs";
 
 export const Navigation = () => {
+	const inputEl = useRef(null);
+
+	const barVisibility = () => {
+		inputEl.current.style.left = -240 + "px"
+		if (inputEl.current.style.left = 0 + "px") {
+			inputEl.current.style.width = 0 + "px";
+			 	inputEl.current.style.left = -240 + "px";
+			return inputEl.current.style.backgroundColor = "transparent";
+		}
+		inputEl.current.style.left = 0 + "px";
+	}
+
 	return (
-		<div className="Navigation-background">
+		<div className="Navigation-background" ref={inputEl}>
 			<div className="Navigation-container">
 				<div className="Navigation-options">
 				<div className="left-side navigation-left-side">
 					<div className="left-side-division navigation-left-side-division">
-						<BsList className="icono icono-compartir"/>
+						<button onClick={barVisibility} >
+							<BsList className="icono icono-compartir" />
+						</button>
 					</div>
 					<div className="logo-name navigation-logo-name">
 						<img src={require('../../img/youtube-logo.png')} alt="youtube_logo" />

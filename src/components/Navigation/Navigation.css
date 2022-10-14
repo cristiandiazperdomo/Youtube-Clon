@@ -5,6 +5,7 @@
     height: 100vh;
     top: 0;
     background-color: rgba(0,0,0,.4);
+	transition: left .25s;
 }
 .Navigation-container {
 	height: 100vh;
@@ -22,6 +23,11 @@
 }
 .Navigation-options {
 	width: 240px;
+}
+button {
+	background-color: transparent;
+	border: none;
+	padding: 0;
 }
 .navigation-left-side {
     box-sizing: border-box;
