@@ -1,8 +1,40 @@
+.Navigation-background{
+	z-index: 2;
+	position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background-color: rgba(0,0,0,.4);
+}
 .Navigation-container {
-	width: 240px;
+	height: 100vh;
+	overflow-y: scroll;
+	position: absolute;
+    background-color: white;
+    top: 0px;
+    width: 240px;
+}
+.Navigation-main {
+	border-top: none !important;
+	margin-top: 0 !important;
 }
 .Navigation-options {
-	width: 100%;
+	width: 240px;
+}
+.navigation-left-side {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    justify-content: flex-start;
+}
+.navigation-left-side-division {
+
+}
+.navigation-logo-name {
+	height: 20px;
+    width: 90px;
+    padding: 18px 14px 18px 16px;
 }
 .Navigation-options ul {
 	padding: 0;
@@ -90,6 +122,6 @@ h4 {
 	margin: 0;
 	color: #909090;
     display: block;
-    padding: 8px 24px;
+    padding: 16px 24px;
     font-size: 13px;
 }
