@@ -1,10 +1,10 @@
 import React from 'react';
 import './Card.css';
-//import { GetImageBank } from '../../callApi/getImageBank';
+import { GetImageBank } from '../../callApi/getImageBank';
 
 export const Card = () => {
-	/*const {callApi, asd} = GetImageBank();
-	callApi()*/
+	const {callApi, asd} = GetImageBank();
+	callApi()
 	return (
 		<div className="card-container">
 			<div className="card">
@@ -28,15 +28,15 @@ export const Card = () => {
 						<div className="card-video-info">
 							<div>
 								<h3>
-									<a href='/'>
+									<a href="#">
 										LAST WEEK
 									</a>
 								</h3>
 							</div>
 							<div>
-								<a href='/'>Franco Escamilla</a>
-								<a href='/'>2707 visualizaciones<span className="scope"></span></a>
-								<a href='/'>hace 13 dias</a>
+								<a href="#">Franco Escamilla</a>
+								<a href="#">2707 visualizaciones<span className="scope"></span></a>
+								<a href="#">hace 13 dias</a>
 							</div>
 						</div>
 					</div>
