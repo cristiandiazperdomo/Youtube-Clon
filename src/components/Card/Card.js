@@ -12,11 +12,11 @@ export const Card = () => {
 					<div className="miniature-container">
 						<img src={require("../../img/dall-e.png")} className="miniature" alt="presentation" />
 					</div>
-					<div className="duration">
+					{/*<div className="duration">
 						<div>
 							<h3>10:50</h3>
 						</div>
-					</div>
+					</div>*/}
 				</header>
 				<footer>
 					<div className="card-left-side">
