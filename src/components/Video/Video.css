@@ -1,6 +1,4 @@
 .Video-container {
-    position: absolute;
-    top: 0;
     margin-left: 240px;
     margin-top: 50px;
     background-color: #f9f9f9;
@@ -10,6 +8,4 @@
     grid-template-columns: repeat(4, 269px);
     /* padding-top: 24px; */
     margin: 0 16px;
-    height: 100vh;
-    overflow-y: scroll;
 }
