@@ -42,9 +42,7 @@ export const Navigation = () => {
 				<div className="Navigation-options">
 				<div className="left-side navigation-left-side">
 					<div className="left-side-division navigation-left-side-division">
-						<button onClick={barVisibility} >
-							<BsList className="icono icono-compartir" />
-						</button>
+							<BsList onClick={barVisibility} className="icono icono-compartir" />
 					</div>
 					<div className="logo-name navigation-logo-name">
 						<img src={require('../../img/youtube-logo.png')} alt="youtube_logo" />
