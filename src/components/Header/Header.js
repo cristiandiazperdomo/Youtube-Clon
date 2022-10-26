@@ -10,7 +10,7 @@ import { MdTableRows,
 import { BsList } from "react-icons/bs";
 export const Header = () => {
 
-	const barVisibilityd = () => {
+	const barVisibility = () => {
 	const inputEl = document.querySelector('.Navigation-background')
 	console.log(inputEl.style.left)
 		if (inputEl.style.left === -240 + "px") {
@@ -23,15 +23,15 @@ export const Header = () => {
 	return (
 		<header className="main-header">
 			<div className="left-side">
-				<div className="left-side-division">
-					<button onClick={barVisibilityd}>
-						<BsList className="icono icono-compartir" />
-					</button>
-				</div>
-				<div className="logo-name">
-					<img src={require('../../img/youtube-logo.png')} alt="youtube_logo" />
-					<h1 className="title">YouTube</h1>
-					<p className="country">UY</p>
+				<div className="left-side navigation-left-side">
+					<div className="left-side-division navigation-left-side-division">
+							<BsList onClick={barVisibility} className="icono icono-compartir" />
+					</div>
+					<div className="logo-name navigation-logo-name">
+						<img src={require('../../img/youtube-logo.png')} alt="youtube_logo" />
+						<h1 className="title">YouTube</h1>
+						<p className="country">UY</p>
+					</div>
 				</div>
 			</div>
 			<div className="center">

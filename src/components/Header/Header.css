@@ -42,7 +42,6 @@
     box-sizing: border-box;
 }
 .icono {
-    margin-top: 2px;
 	width: 24px;
     height: 30px;
 }
@@ -60,7 +59,7 @@ svg path{
 	width: 168px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .left-side .logo-name {
 	display: flex;
