@@ -1,10 +1,9 @@
 import React from 'react';
 import './Card.css';
-import { GetImageBank } from '../../callApi/getImageBank';
+//import { GetImageBank } from '../../callApi/getImageBank';
 
 export const Card = () => {
-	const {callApi, asd} = GetImageBank();
-	callApi()
+	//const {callApi, asd} = GetImageBank();
 	return (
 		<div className="card-container">
 			<div className="card">

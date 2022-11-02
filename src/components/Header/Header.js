@@ -11,13 +11,23 @@ import { BsList } from "react-icons/bs";
 export const Header = () => {
 
 	const barVisibility = () => {
-	const inputEl = document.querySelector('.Navigation-background')
-	console.log(inputEl.style.left)
+		const inputEl = document.querySelector('.Navigation-background')
+	
 		if (inputEl.style.left === -240 + "px") {
-			 	inputEl.style.left = 0 + "px";
+			inputEl.style.left = 0 + "px";
 			return inputEl.style.backgroundColor = "transparent";
 		}
 		inputEl.style.left = -240 + "px";
+	}
+	const videoContainerSize = () => {
+		if (document.querySelector('.Video-container').style.marginLeft == "240px") {
+			return document.querySelector('.Video-container').style.marginLeft = "76px";
+		}
+		return document.querySelector('.Video-container').style.marginLeft = "240px";
+	}
+	const deplat = () => {
+		barVisibility()
+		videoContainerSize()
 	}
 
 	return (
@@ -25,7 +35,7 @@ export const Header = () => {
 			<div className="left-side">
 				<div className="left-side navigation-left-side">
 					<div className="left-side-division navigation-left-side-division">
-							<BsList onClick={barVisibility} className="icono icono-compartir" />
+							<BsList onClick={deplat} className="icono icono-compartir" />
 					</div>
 					<div className="logo-name navigation-logo-name">
 						<img src={require('../../img/youtube-logo.png')} alt="youtube_logo" />

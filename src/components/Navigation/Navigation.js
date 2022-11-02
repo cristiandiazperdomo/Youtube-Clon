@@ -1,5 +1,4 @@
-import { React,
-		 useRef } from 'react';
+import { React } from 'react';
 import './Navigation.css';
 import { MdOutlineVideoLibrary,
 		 MdOutlineSubscriptions, 
@@ -23,26 +22,41 @@ import { GiHouse } from "react-icons/gi";
 //import { SlArrowDown } from "react-icons/sl"; 
 import { BsList } from "react-icons/bs";
 
-export const Navigation = () => {
-	const inputEl = useRef(null);
+export const Navigation = ({ videoContainer }) => {
+	console.log(videoContainer)
 
 	const barVisibility = () => {
-		inputEl.current.style.left = -240 + "px"
-		if (inputEl.current.style.left = 0 + "px") {
-			inputEl.current.style.width = 0 + "px";
-			 	inputEl.current.style.left = -240 + "px";
-			return inputEl.current.style.backgroundColor = "transparent";
+	const inputEl = document.querySelector('.Navigation-background');
+		inputEl.style.left = -240 + "px";
+		if (inputEl.style.left = 0 + "px") {
+				inputEl.style.width = 0 + "px";
+			 	inputEl.style.left = -240 + "px";
+			return inputEl.style.backgroundColor = "transparent";
 		}
-		inputEl.current.style.left = 0 + "px";
+
+		inputEl.style.left = 0 + "px";
+	}
+	const navigationContainer = document.querySelector('.icono-compartir');
+
+	const deplat = () => {
+		barVisibility()
+		videoContainerSize()
+	}
+
+	const videoContainerSize = () => {
+		if (document.querySelector('.Video-container').style.marginLeft == "76px") {
+			return document.querySelector('.Video-container').style.marginLeft = "240px";
+		}
+		return document.querySelector('.Video-container').style.marginLeft = "76px";
 	}
 
 	return (
-		<div className="Navigation-background" ref={inputEl}>
+		<div className="Navigation-background">
 			<div className="Navigation-container">
 				<div className="Navigation-options">
 				<div className="left-side navigation-left-side">
 					<div className="left-side-division navigation-left-side-division">
-							<BsList onClick={barVisibility} className="icono icono-compartir" />
+							<BsList onClick={deplat}className="icono icono-compartir" />
 					</div>
 					<div className="logo-name navigation-logo-name">
 						<img src={require('../../img/youtube-logo.png')} alt="youtube_logo" />
