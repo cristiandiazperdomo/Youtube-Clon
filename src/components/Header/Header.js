@@ -20,9 +20,14 @@ export const Header = () => {
 		inputEl.style.left = -240 + "px";
 	}
 	const videoContainerSize = () => {
-		if (document.querySelector('.Video-container').style.marginLeft == "240px") {
-			return document.querySelector('.Video-container').style.marginLeft = "76px";
+		document.querySelector('.Videos').style.gridTemplateColumns = "269px 269px 269px 269px";
+		let cards = document.querySelectorAll('.card-container');
+		for (let i = 0; i < cards.length; i++) {
+			console.log(cards[i].style.width)
+			cards[i].style.width = "253px";
+			cards[i].style.height = "253px";
 		}
+		console.log("hpña")
 		return document.querySelector('.Video-container').style.marginLeft = "240px";
 	}
 	const deplat = () => {

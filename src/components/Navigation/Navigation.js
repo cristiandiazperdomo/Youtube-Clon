@@ -23,31 +23,32 @@ import { GiHouse } from "react-icons/gi";
 import { BsList } from "react-icons/bs";
 
 export const Navigation = ({ videoContainer }) => {
-	console.log(videoContainer)
 
-	const barVisibility = () => {
-	const inputEl = document.querySelector('.Navigation-background');
-		inputEl.style.left = -240 + "px";
-		if (inputEl.style.left = 0 + "px") {
-				inputEl.style.width = 0 + "px";
-			 	inputEl.style.left = -240 + "px";
-			return inputEl.style.backgroundColor = "transparent";
+	const barVisibility = () => {	//show small sidebar or larger sidebar
+		const navigationBar = document.querySelector('.Navigation-background');	
+		if (navigationBar.style.left = 0 + "px") {
+			navigationBar.style.width = 0 + "px";
+			navigationBar.style.left = -240 + "px";
 		}
-
-		inputEl.style.left = 0 + "px";
-	}
-	const navigationContainer = document.querySelector('.icono-compartir');
-
-	const deplat = () => {
-		barVisibility()
-		videoContainerSize()
+		navigationBar.style.left = -240 + "px";
 	}
 
-	const videoContainerSize = () => {
-		if (document.querySelector('.Video-container').style.marginLeft == "76px") {
-			return document.querySelector('.Video-container').style.marginLeft = "240px";
+	const videoContainerSize = () => { //make the video container smaller or larger
+		let cards = document.querySelectorAll('.card-container');
+		console.log(cards)
+		document.querySelector('.Videos').style.gridTemplateColumns = "308px 308px 308px 308px";
+		for (let i = 0; i < cards.length; i++) {
+			console.log(1)
+			cards[i].style.width = "295px";
+			cards[i].style.height = "280px";
 		}
+
 		return document.querySelector('.Video-container').style.marginLeft = "76px";
+	}
+
+	const showItAndMakeItSmallerOrLarger = () => {
+		barVisibility();
+		videoContainerSize();
 	}
 
 	return (
@@ -56,7 +57,7 @@ export const Navigation = ({ videoContainer }) => {
 				<div className="Navigation-options">
 				<div className="left-side navigation-left-side">
 					<div className="left-side-division navigation-left-side-division">
-							<BsList onClick={deplat}className="icono icono-compartir" />
+							<BsList onClick={showItAndMakeItSmallerOrLarger}className="icono icono-compartir" />
 					</div>
 					<div className="logo-name navigation-logo-name">
 						<img src={require('../../img/youtube-logo.png')} alt="youtube_logo" />
