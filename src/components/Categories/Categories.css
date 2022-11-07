@@ -1,0 +1,28 @@
+.scroll {
+    display: flex;
+    position: fixed;
+    z-index: 2;
+}
+.scroll i:nth-child(1) {
+    position: fixed;
+    z-index: 100000;
+    margin-top: 20px;
+}
+.scroll i:nth-child(3) {
+    position: fixed;
+    right: 0;
+    z-index: 100000;
+    margin-top: 20px;
+}
+
+.Categories-container {
+    display: flex;
+    height: 56px;
+    top: 56px;
+    padding: 0 12px;
+    background-color: white;
+    z-index: 1;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}

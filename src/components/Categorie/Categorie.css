@@ -1,0 +1,11 @@
+.Categorie-container {
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	background-color: rgba(0, 0, 0, .05);
+	margin: 12px;
+}
+.Categorie-container p {
+	padding: 0 12px;
+	font-size: 14px;
+}
