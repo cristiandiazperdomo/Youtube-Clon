@@ -8,4 +8,6 @@
 .Categorie-container p {
 	padding: 0 12px;
 	font-size: 14px;
+	width: 100%;
+	white-space: nowrap;
 }
