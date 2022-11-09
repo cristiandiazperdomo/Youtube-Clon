@@ -1,25 +1,30 @@
-import React from 'react';
+import React, {
+	 useRef,
+	 useState
+} from 'react';
 import { Categorie } from '../Categorie/Categorie';
 import { ImCircleLeft, ImCircleRight } from "react-icons/im";
 import './Categories.css';
 
 export const Categories = () => {
+	const [ showScroll, setShowScroll ] = useState(0);
+	const categories = useRef(null);
 
 	const scrollLeft = () => {
-		const categories = document.querySelector(".Categories-container");
-		categories.scrollLeft -= 220;
+		categories.current.scrollLeft -= 220;
+		setShowScroll(categories.current.scrollLeft)
 	}
 	const scrollRight = () => {
-		const categories = document.querySelector(".Categories-container");
-		categories.scrollLeft += 220;
+		categories.current.scrollLeft += 220;
+		setShowScroll(categories.current.scrollLeft)
+		console.log(showScroll)
 	}
-
 	return (
 		<div className="scroll">
-			<i onClick={scrollLeft}>
-				<ImCircleLeft />
+			<i onClick={scrollLeft} className="scrollLeft">
+				{showScroll > 0 && <ImCircleLeft />}
 			</i>
-			<div className="Categories-container">
+			<div className="Categories-container" ref={categories}>
 				<Categorie categorie="Todo" />
 				<Categorie categorie="Mixes" />
 				<Categorie categorie="Música" />
@@ -47,7 +52,7 @@ export const Categories = () => {
 			</div>
 			<i onClick={scrollRight}>
 				<ImCircleRight />
-			</i>	
+			</i>
 		</div>
 	)
 }
