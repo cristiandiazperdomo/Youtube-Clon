@@ -12,18 +12,20 @@ export const Categories = () => {
 
 	const scrollLeft = () => {
 		categories.current.scrollLeft -= 220;
-		setShowScroll(categories.current.scrollLeft)
+		let asd = showScroll - 220;
+		setShowScroll(asd)
 	}
 	const scrollRight = () => {
 		categories.current.scrollLeft += 220;
-		setShowScroll(categories.current.scrollLeft)
-		console.log(showScroll)
+		let asd = showScroll + 220;
+		setShowScroll(asd)
 	}
 	return (
 		<div className="scroll">
 			<i onClick={scrollLeft} className="scrollLeft">
 				{showScroll > 0 && <ImCircleLeft />}
 			</i>
+			<div className="scroll-box"></div>
 			<div className="Categories-container" ref={categories}>
 				<Categorie categorie="Todo" />
 				<Categorie categorie="Mixes" />
@@ -50,6 +52,7 @@ export const Categories = () => {
 				<Categorie categorie="Videojuegos" />
 				<Categorie categorie="The Weeknd" />
 			</div>
+			<div className="scroll-box scroll-box-left"></div>
 			<i onClick={scrollRight}>
 				<ImCircleRight />
 			</i>
