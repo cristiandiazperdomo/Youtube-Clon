@@ -7,6 +7,6 @@
 .Videos {
     display: grid;
     grid-template-columns: repeat(4, 269px);
-    padding-top: 24px; 
+    padding-top: 80px;
     margin: 0 16px;
 }

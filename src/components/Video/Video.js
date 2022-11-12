@@ -1,5 +1,5 @@
 import { React } from 'react';
-import { Categories } from '../Categories/Categories';
+import { Sections } from '../Sections/Sections';
 import { Card } from '../Card/Card';
 import './Video.css';
 
@@ -7,7 +7,7 @@ export const Video = () => {
 
 	return (
 		<div className="Video-container">
-			<Categories />
+			<Sections />
 				<div className="Videos">
 					<Card/>
 					<Card/>
