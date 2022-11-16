@@ -35,11 +35,14 @@ export const Navigation = ({ videoContainer }) => {
 
 	const videoContainerSize = () => { //make the video container smaller or larger
 		let cards = document.querySelectorAll('.card-container');
-		console.log(cards)
-		document.querySelector('.Videos').style.gridTemplateColumns = "308px 308px 308px 308px";
+		if (window.innerWidth < 1140 && window.innerWidth > 874) {
+			document.querySelector('.Videos').style.gridTemplateColumns = "repeat(3, calc(33.3% - 16px))";
+			return document.querySelector('.Video-container').style.marginLeft = "76px";
+		} else if (window.innerWidth < 874) {
+			return document.querySelector('.Videos').style.gridTemplateColumns = "repeat(2, calc(50% - 16px))";
+		}
 		for (let i = 0; i < cards.length; i++) {
-			console.log(1)
-			cards[i].style.width = "295px";
+			cards[i].style.width = "100%";
 			cards[i].style.height = "280px";
 		}
 

@@ -20,14 +20,18 @@ export const Header = () => {
 		inputEl.style.left = -240 + "px";
 	}
 	const videoContainerSize = () => {
-		document.querySelector('.Videos').style.gridTemplateColumns = "269px 269px 269px 269px";
+		document.querySelector('.Videos').style.gridTemplateColumns = "repeat(4, calc(25% - 16px))";
 		let cards = document.querySelectorAll('.card-container');
 		for (let i = 0; i < cards.length; i++) {
-			console.log(cards[i].style.width)
-			cards[i].style.width = "253px";
+			cards[i].style.width = "100%";
 			cards[i].style.height = "253px";
 		}
-		console.log("hpña")
+		if (window.innerWidth < 1024 && window.innerWidth > 874) {
+			document.querySelector('.Videos').style.gridTemplateColumns = "repeat(3, calc(33,3% - 16px))";
+			return document.querySelector('.Video-container').style.marginLeft = "240px";
+		} else if (window.innerWidth < 874) {
+			return document.querySelector('.Videos').style.gridTemplateColumns = "repeat(2, calc(50% - 16px))"; 
+		}
 		return document.querySelector('.Video-container').style.marginLeft = "240px";
 	}
 	const deplat = () => {

@@ -6,7 +6,56 @@
 }
 .Videos {
     display: grid;
-    grid-template-columns: repeat(4, 269px);
+    grid-template-columns: repeat(4, calc(25% - 16px));
     padding-top: 80px;
     margin: 0 16px;
+    justify-content: space-around;
+}
+@media all and (max-width: 1140px) {
+    .Videos {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(3, calc(33.3% - 16px)) !important;
+
+    }
+    .card-container {
+        width: 100% !important;
+    }
+}
+@media all and (max-width: 874px) {
+    .MiniNavigation-container { 
+        display: none;
+    }
+    .Video-container {
+        margin-left: 0 !important;
+    }
+    .Videos {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(2, calc(48% - 16px)) !important;
+        justify-content: space-evenly;
+    }
+    .card-container {
+        box-sizing: border-box;
+        margin: 0 16px;
+    }
+}
+@media all and (max-width: 566px) {
+    .Video-container {
+       
+    }
+    .Videos {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        grid-template-columns: repeat(1, calc(70% - 16px)) !important;
+        margin: 0;
+
+    }
+    .card-container {
+     
+    }
+    .miniature-container img {
+        border-radius: 16px;
+    }
 }
