@@ -18,6 +18,9 @@
         grid-template-columns: repeat(3, calc(33.3% - 16px)) !important;
 
     }
+    .Video-container {
+        margin-left: 0 !important;
+    }
     .card-container {
         width: 100% !important;
     }
