@@ -19,15 +19,13 @@
 
     }
     .Video-container {
+        margin-left: 76px !important;
     }
     .card-container {
         width: 100% !important;
     }
 }
 @media all and (max-width: 874px) {
-    .MiniNavigation-container { 
-        display: none;
-    }
     .Video-container {
         margin-left: 0 !important;
     }
@@ -50,7 +48,7 @@
         display: grid;
         justify-content: center;
         justify-items: center;
-        grid-template-columns: repeat(1, calc(70% - 16px)) !important;
+        grid-template-columns: repeat(1, calc(80% - 16px)) !important;
         margin: 0;
 
     }
@@ -59,5 +57,10 @@
     }
     .miniature-container img {
         border-radius: 16px;
+    }
+}
+@media all and (max-width: 375px) {
+    #Videos {
+        grid-template-columns: repeat(1, calc(100% - 16px)) !important;
     }
 }

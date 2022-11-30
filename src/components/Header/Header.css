@@ -192,3 +192,61 @@ svg path{
         min-width: auto;
     }
 }
+@media all and (max-width: 480px) {
+    .main-header {
+        height: 48px;
+        box-shadow: 0 4px 2px -2px rgb(0 0 0 / 20%);
+    }
+    .Navigation-background {
+        display: none;
+    }
+    .navigation-left-side {
+        padding: 0 !important;
+    }
+    .country {
+        display: none;
+    }
+    .left-side {
+        height: 48px;
+    }
+    .left-side-division-total {
+        display: none;
+    }
+    .icono-voice-container {
+        display: none;
+    }
+    .right-side button {
+        display: none;
+    }
+    .right-side button:nth-child(3) {
+        display: flex;
+    }
+    .Sections-container {
+        height: 48px !important;
+        box-shadow: 0 4px 2px -2px rgb(0 0 0 / 5%);
+        margin-top: -8px;
+    }
+    .Category-container {
+        margin: 8px !important;
+    }
+    .scroll-box {
+        margin: 0px 32px !important; 
+    }
+    .scroll i:nth-child(1) {
+        margin-top: 0px;
+    }
+    .scroll-box-left {
+        margin: 0px 32px 0 0;
+    }
+    .scroll i:nth-child(1) {
+        margin-top: 0px !important;
+    }
+    .scroll i:nth-child(5) {
+        margin-top: 0px !important;
+    }
+}
+@media all and (max-width: 335px) {
+    .center {
+        margin: 0;
+    }
+}

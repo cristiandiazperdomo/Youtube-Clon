@@ -8,7 +8,7 @@ export const Video = () => {
 	return (
 		<div className="Video-container">
 			<Sections />
-				<div className="Videos">
+				<div className="Videos" id="Videos">
 					<Card/>
 					<Card/>
 					<Card/>

@@ -1,0 +1,36 @@
+.CellMenu-container {
+    display: none;
+    z-index: 2020;
+	font-size: 10px;
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+}
+.CellMenu-container-items {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    margin-top: -48px;
+    display: flex;
+    flex-direction: column;
+}
+.CellMenu-container-items ul {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: 0 -4px 2px -2px rgb(0 0 0 / 20%);
+}
+.CellMenu-li {
+    padding: 4px 0 !important;
+}
+.CellMenu-li i{
+    margin: 0 !important;
+}
+@media all and (max-width: 874px) {
+    .CellMenu-container {
+        display: block;
+    }
+}

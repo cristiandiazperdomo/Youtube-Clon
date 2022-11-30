@@ -34,3 +34,8 @@
 	width: 24px;
 	height: 24px;
 }
+@media all and (max-width: 874px) {
+	.MiniNavigation-container { 
+	    display: none;
+	}
+}

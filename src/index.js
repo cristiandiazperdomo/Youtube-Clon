@@ -5,6 +5,7 @@ import { Header } from './components/Header/Header';
 import { Navigation } from './components/Navigation/Navigation';
 import { MiniNavigation } from './components/MiniNavigation/MiniNavigation';
 import { Video } from './components/Video/Video';
+import { CellMenu } from './components/cellMenu/CellMenu'
 //import { MyContext } from './context/AppContext';
 
 ReactDOM.render(
@@ -13,6 +14,7 @@ ReactDOM.render(
     <Navigation />
     <MiniNavigation />
     <Video />
+    <CellMenu />
   </React.StrictMode>,
   document.getElementById('root')
 );
